@@ -11,7 +11,7 @@
 		}
 	],
 	"autoload": {
-		"psr-4": { "VirtualAssembly\\SparqlBundle": "" }
+		"psr-0": { "VirtualAssembly\\SparqlBundle": "" }
 	},
 	"minimum-stability": "dev",
 
