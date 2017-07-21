@@ -1,0 +1,28 @@
+{
+	"name": "VirtualAssembly/SparqlBundle",
+	"type": "symfony-bundle",
+	"description": "Symfony VirtualAssembly SparqlBundle",
+	"keywords": ["Test"],
+	"authors": [
+		{
+			"name": "Virtual Assembly",
+			"email": "contact@assemblee-virtuelle.org",
+			"homepage": "assemblee-virtuelle.org"
+		}
+	],
+	"autoload": {
+		"psr-4": { "VirtualAssembly\\SparqlBundle": "" }
+	},
+	"minimum-stability": "dev",
+
+    "require" : {
+    },
+    "target-dir" : "VirtualAssembly/SparqlBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "1.0-dev"
+        }
+    }
+}
