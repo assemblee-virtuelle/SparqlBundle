@@ -3,7 +3,7 @@
 namespace VirtualAssembly\SparqlBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
+use VirtualAssembly\SparqlBundle\Services\SparqlClient;
 class DefaultController extends Controller
 {
     public function indexAction()
