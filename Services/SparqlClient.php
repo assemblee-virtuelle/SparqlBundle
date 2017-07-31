@@ -24,6 +24,7 @@ class SparqlClient
     private $type = null;
 
     public function newQuery($type){
+    	$this->type = $type;
         switch ($type){
             case SparqlClient::SPARQL_SELECT:
                 return new sparqlSelect();
@@ -43,9 +44,9 @@ class SparqlClient
             case SparqlClient::SPARQL_INSERT_DATA:
                 return new sparqlUpdate($type);
                 break;
-//            case SparqlClient::SPARQL_DELETE_INSERT:
-//                return ''
-//                break;
+            case SparqlClient::SPARQL_DELETE_INSERT:
+								return new sparqlUpdate($type);
+                break;
         }
         return false;
     }
