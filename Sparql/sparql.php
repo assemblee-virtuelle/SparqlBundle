@@ -128,7 +128,7 @@ class sparql
 
     public function prefixToString(){
         $prefixString ='';
-        if(sizeof($this->prefix) > 0){
+        if($this->prefix){
             foreach ($this->prefix as $key => $url){
                 $prefixString .= 'PREFIX '.$key.': <'.$url.'>'."\n";
             }
@@ -138,7 +138,7 @@ class sparql
 
     public function whereToString(){
         $whereString = '';
-        if(sizeof($this->where) > 0 || sizeof($this->union) > 0){
+        if(($this->where && sizeof($this->where) > 0) || ($this->where && sizeof($this->union) > 0)){
         $whereString ='WHERE {';
         $whereString .= $this->formatTab($this->where);
         $whereString .= $this->unionToString();
